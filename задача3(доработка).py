@@ -20,7 +20,7 @@ for file_name in os.listdir(current):
 sorted_values = sorted(all_list ,key=lambda el: el['value1'])
 #pprint(sorted_values)
 file_ = open('4.txt', 'w', encoding='utf-8')
-for line in all_list:
+for line in sorted_values:
    file_.write(f"{line['file_name']}\n")
    file_.write(f"{line['value1']}\n")
    file_.write(f"{(''.join(line['value2']))}\n")
